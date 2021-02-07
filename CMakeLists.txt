@@ -4,3 +4,5 @@ project(cpp)
 set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_1")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_2")
