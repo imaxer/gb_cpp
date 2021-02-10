@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.10.2)
 project(cpp)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -6,3 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_1")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_2")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_3")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_3_lib")
