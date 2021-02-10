@@ -10,3 +10,7 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_2")
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_3")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_3_lib")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_4")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/chalendge_2")
