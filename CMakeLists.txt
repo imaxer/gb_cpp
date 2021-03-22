@@ -18,3 +18,5 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/chalendge_2")
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_5")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_6")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_7")
