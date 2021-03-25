@@ -21,4 +21,6 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_6")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/lesson_7")
 
+add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_2")
+
 add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_3")
