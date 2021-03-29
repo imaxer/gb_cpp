@@ -16,7 +16,7 @@ private:
 public:
     Hand();
     Hand(const Hand &hand);
-    ~Hand();
+    virtual ~Hand();
 
     void add(Card *card);
 
