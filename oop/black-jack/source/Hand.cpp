@@ -24,12 +24,18 @@ void Hand::add(Card *card) {
 }
 
 void Hand::clear() {
+    for (auto &card : *cards) {
+        delete card;
+    }
     cards->clear();
 }
 
 int Hand::getValue() const {
     int sum = 0;
     for (auto &card : *cards) {
+        if (!card->getPosition()) {
+            continue;
+        }
         // у туза — 1 или 11 (11 пока общая сумма не больше 21, далее 1)
         if (sum <= 21 && card->getRank() == Rank::ACE) {
             sum += 11;

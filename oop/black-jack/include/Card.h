@@ -8,6 +8,8 @@
 #include "Suit.h"
 #include "Rank.h"
 
+#include <iostream>
+
 class Card {
 private:
     Suit suit;
@@ -26,6 +28,8 @@ public:
     void flip();
 
     [[nodiscard]] int getValue() const;
+
+    friend std::ostream &operator<< (std::ostream &ostream, const Card &card);
 };
 
 

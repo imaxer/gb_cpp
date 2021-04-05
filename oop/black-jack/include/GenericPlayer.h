@@ -6,6 +6,7 @@
 #define CPP_GENERICPLAYER_H
 
 #include <string>
+#include <iostream>
 
 #include "Hand.h"
 
@@ -14,17 +15,20 @@ private:
     std::string name;
 
 public:
-    GenericPlayer(std::string &name) : Hand(), name(name) {};
-    GenericPlayer(const GenericPlayer &genericPlayer) : name(genericPlayer.name), Hand(genericPlayer) {};
-    virtual ~GenericPlayer() {};
+    explicit GenericPlayer(std::string &name) : Hand(), name(name) {};
+    explicit GenericPlayer(std::string &&name) : Hand(), name(name) {};
+    GenericPlayer(const GenericPlayer &genericPlayer) = default;
+    ~GenericPlayer() override = default;
 
-    std::string getName() const;
+    [[nodiscard]] std::string getName() const;
 
-    bool isBoosted() const;
+    [[nodiscard]] bool isBoosted() const;
 
     void bust() const;
 
     virtual bool isHitting() = 0;
+
+    friend std::ostream &operator<< (std::ostream &ostream, const GenericPlayer &genericPlayer);
 };
 
 
