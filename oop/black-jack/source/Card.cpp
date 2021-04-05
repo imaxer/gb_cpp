@@ -52,3 +52,12 @@ Suit Card::getSuit() const{
 bool Card::getPosition() const {
     return this->position;
 }
+
+std::ostream &operator<< (std::ostream &ostream, const Card &card) {
+    if (card.getPosition()) {
+        ostream << "{ Suit: " << card.getSuit() << ", Rank: " << card.getRank() << " }" << std::endl;
+    } else {
+        ostream << "{ XX }" << std::endl;
+    }
+    return ostream;
+}

@@ -30,3 +30,5 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_4")
 add_subdirectory("${PROJECT_SOURCE_DIR}/oop/black-jack")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_5")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_6")

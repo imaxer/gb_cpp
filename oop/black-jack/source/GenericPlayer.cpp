@@ -17,3 +17,14 @@ bool GenericPlayer::isBoosted() const {
 void GenericPlayer::bust() const {
     std::cout << "Player " << this->getName() << ". Bust!!!" << std::endl;
 }
+
+std::ostream &operator<<(std::ostream &ostream, const GenericPlayer &genericPlayer) {
+    ostream << "Player: " << genericPlayer.getName() << std::endl;
+    ostream << "Cards: " << std::endl;
+    for (auto &card : *genericPlayer.cards) {
+        ostream << "\t" << *card << " ";
+    }
+    ostream << std::endl;
+    ostream << "Summary: " << genericPlayer.getValue() << std::endl;
+    return ostream;
+}
