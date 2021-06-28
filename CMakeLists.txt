@@ -34,3 +34,5 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_5")
 add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_6")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/oop/lesson_7")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/cpp_advanced/lesson_1")
