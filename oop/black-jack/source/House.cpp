@@ -10,9 +10,7 @@ bool House::isHitting() {
 
 void House::flipFirstCard() {
     for (auto &card : *cards) {
-        if (!card->getPosition()) {
-            card->flip();
-            break;
-        }
+        card->flip();
+        break;
     }
 }

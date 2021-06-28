@@ -10,7 +10,6 @@
 
 #include "GenericPlayer.h"
 
-
 class Player : public GenericPlayer {
 public:
     explicit Player(std::string &name) : GenericPlayer(name) {};

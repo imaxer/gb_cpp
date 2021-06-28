@@ -5,13 +5,14 @@
 #include "../include/Player.h"
 
 bool Player::isHitting() {
-    char answer = ' ';
+    std::string answer;
 
-    while (answer != 'y' && answer != 'n') {
-        std::cout << "Does player " << getName() <<" need one more card? (y/n)" << std::endl;
-        std::cin >> answer;
+    std::cout << answer << std::endl;
+    while (!(answer == "y" || answer == "n") && getValue() <= 21) {
+        std::cout << "Does player " << getName() << " need one more card? (y/n)" << std::endl;
+        std::getline(std::cin, answer);
     }
-    return answer == 'y';
+    return answer == "y";
 }
 
 void Player::win() {
